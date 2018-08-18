@@ -18,7 +18,7 @@ FROM alpine:latest
 # && chmod -R g+rwX /v2raybin 
 
 RUN mkdir -m 777 /v2ray
-
+ENV VER=3.35
 ADD entrypoint.sh /entrypoint.sh
 ADD config.json /v2ray/config.json
 RUN chmod +x /entrypoint.sh 
